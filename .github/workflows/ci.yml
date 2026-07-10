@@ -23,7 +23,7 @@ jobs:
     test:
         needs: lint           # baru jalan setelah lint
         runs-on: ubuntu-latest 
-        Steps:
+        steps:
             - uses: actions/checkout@v4
             - name: Install pytest
               run: pip install pytest
